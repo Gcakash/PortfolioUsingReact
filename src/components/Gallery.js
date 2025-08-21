@@ -5,7 +5,7 @@ import './css/Gallery.css';
 const IMAGES = [
   '/img/Gallery/Gallery1.jpeg',
   '/img/Gallery/Gallery2.jpg',
-  '/img/Gallery/gallery3.jpg',
+  '/img/Gallery/Gallery3.jpg',
   '/img/Gallery/Gallery4.jpeg',
   '/img/Gallery/Gallery5.jpg',
   '/img/Gallery/Gallery6.jpeg',

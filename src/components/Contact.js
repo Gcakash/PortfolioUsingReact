@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
-import './Contact.css';
+import './css/Contact.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -104,7 +104,7 @@ const Contact = () => {
 
   const getSubmitButtonText = () => {
     if (isSubmitting) return 'Sending...';
-    if (submitStatus === 'success') return 'Message Sent!';
+    if (submitStatus === 'success') return 'Thank you! We’ll contact you shortly.';
     if (submitStatus === 'error') return 'Error! Try Again';
     return 'Send Message';
   };

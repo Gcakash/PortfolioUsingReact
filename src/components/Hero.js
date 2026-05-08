@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaArrowRight,FaFacebook,FaGlobe } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
-import './Hero.css';
+import './css/Hero.css';
 
 const Hero = () => {
   const socialLinks = [

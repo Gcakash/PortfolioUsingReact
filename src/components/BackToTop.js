@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
-import './BackToTop.css';
+import './css/BackToTop.css';
 
 const BackToTop = () => {
   const [isVisible, setIsVisible] = useState(false);

@@ -12,15 +12,8 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <meta http-equiv="Content-Security-Policy" 
-    content="default-src 'self' blob: data: https:; 
-             script-src 'self' blob: 'unsafe-inline' 'unsafe-eval' https:; 
-             style-src 'self' 'unsafe-inline' https:; 
-             img-src 'self' data: https:; 
-             font-src 'self' data: https:;
-             connect-src 'self' https:;
-             frame-src 'self' https:;
-             object-src 'none';">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' blob:; style-src * 'self' 'unsafe-inline' https:; img-src * data: blob:;">
+
 
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { FaBriefcase, FaGraduationCap, FaCalendarAlt, FaMapMarkerAlt,FaTimes ,FaExpand } from 'react-icons/fa';
-import './Experience.css';
+import './css/Experience.css';
 
 const Certification = () => {
 

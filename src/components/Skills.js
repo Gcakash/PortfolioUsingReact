@@ -5,7 +5,7 @@ import {
   FaCheckCircle, FaServer
 } from 'react-icons/fa';
 import { SiDotnet, SiCsharp, SiBlazor, SiMicrosoftsqlserver, SiAzuredevops, Si1Password } from 'react-icons/si';
-import './Skills.css';
+import './css/Skills.css';
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState('frontend');

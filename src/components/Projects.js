@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaGithub, FaExternalLinkAlt, FaEye } from 'react-icons/fa';
-import './Projects.css';
+import './css/Projects.css';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');

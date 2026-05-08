@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaGithub, FaLinkedin, FaFacebook, FaEnvelope, FaHeart, FaArrowUp } from 'react-icons/fa';
-import './Footer.css';
+import './css/Footer.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

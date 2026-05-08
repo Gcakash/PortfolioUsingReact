@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { FaSun, FaMoon, FaBars, FaTimes, FaUser } from 'react-icons/fa';
-import './Navbar.css';
+import './css/Navbar.css';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaDownload, FaUser, FaCode, FaLightbulb } from 'react-icons/fa';
-import './About.css';
+import './css/About.css';
 
 const About = () => {
   const personalInfo = [

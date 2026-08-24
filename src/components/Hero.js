@@ -2,6 +2,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaArrowRight,FaFacebook,FaGlobe } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
 import './css/Hero.css';
+import { getExperience } from './Common'; 
 
 const Hero = () => {
   const socialLinks = [
@@ -19,7 +20,7 @@ const Hero = () => {
     (now.getFullYear() - startDate.getFullYear()) * 12 +
     (now.getMonth() - startDate.getMonth());
 
-  const yearsExperience = (diffInMonths / 12).toFixed(1); // 1 decimal place
+  const yearsExperience = getExperience("2022-05-01"); // 1 decimal place
 
 
   const scrollToSection = (sectionId) => {
@@ -114,7 +115,7 @@ const Hero = () => {
               <div className="image-dots"></div>
             </div>
             <div className="experience-badge">
-              <span>{yearsExperience}+</span>
+              <span>{yearsExperience}</span>
               <small>Years Experience</small>
            </div>
           </div>

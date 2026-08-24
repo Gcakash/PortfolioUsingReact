@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaDownload, FaUser, FaCode, FaLightbulb } from 'react-icons/fa';
 import './css/About.css';
+import { getExperience } from './Common';
 
 const About = () => {
   const personalInfo = [
@@ -8,7 +9,7 @@ const About = () => {
     { label: 'Email', value: 'akashgc2054@gmail.com' },
     { label: 'Phone', value: '9867288*****' },
     { label: 'Location', value: 'Kathmandu, Nepal' },
-    { label: 'Experience', value: '3+ Years' },
+    { label: 'Experience', value: getExperience("2022-05-01")},
     { label: 'Freelance', value: 'Available' }
   ];
 
@@ -30,6 +31,17 @@ const About = () => {
     }
   ];
 
+ const getResume = () => {
+        const today = new Date();
+        const cutoffDate = new Date("2026-09-08");
+
+        if (today >= cutoffDate) {
+            return "/files/Akash_GC_Resume_2026_Sep.pdf";
+        }
+
+        return "/files/Akash_GC_Resume.pdf";
+    };
+
   return (
     <section id="about" className="about">
       <div className="container">
@@ -43,7 +55,7 @@ const About = () => {
           <div className="about-description">
             <h3>Who I Am</h3>
             <p>
-              I’m a passionate <strong>.NET Developer</strong> and <strong>Full-Stack Engineer</strong> with 3+ years of 
+              I’m a passionate <strong>.NET Developer</strong> and <strong>Full-Stack Engineer</strong> with {getExperience("2022-05-01")} years of 
               experience in scalable web applications using <strong>.NET Core</strong>, <strong>ASP.NET MVC</strong>, 
               <strong>Blazor</strong>, <strong>React</strong>, and MS SQL.
             </p>
@@ -75,12 +87,17 @@ const About = () => {
               ))}
             </div>
 
-            <div className="about-actions">
-              <a href="/Akash GC Resume.pdf" className="btn btn-primary" download>
-                <FaDownload /> Download Resume
+          <div className="about-actions">
+              <a
+                  href={getResume()}
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+              >
+                  <FaDownload /> View Resume
               </a>
-            </div>
           </div>
+      </div>
 
           <div className="about-info">
             <div className="info-card">
@@ -103,7 +120,7 @@ const About = () => {
                   <div className="stat-label">Projects Completed</div>
                 </div>
                 <div className="stat-item">
-                  <div className="stat-number">3.5+</div>
+                  <div className="stat-number">{getExperience("2022-05-01")}</div>
                   <div className="stat-label">Years Experience</div>
                 </div>
                 <div className="stat-item">

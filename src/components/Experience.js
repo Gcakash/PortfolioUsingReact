@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { FaBriefcase, FaGraduationCap, FaCalendarAlt, FaMapMarkerAlt,FaTimes ,FaExpand } from 'react-icons/fa';
 import './css/Experience.css';
+import { getExperience } from './Common';
 
 const Experience = () => {
 
@@ -26,9 +27,33 @@ const Experience = () => {
 
   const workExperience = [
     {
-      title: 'Senior Software Engineer',
+      title: 'Software Engineer',
+      company: 'Cedar Gate Technologies (IQVIA)',
+      startDate: '2026-09-08',
+      period: `Sep 2026 - Present (${getExperience('2026-09-01')} years)`,
+      location: 'Kathmandu, Nepal',
+      description: [
+        'Working on healthcare technology solutions and software applications',
+        'Developing and maintaining scalable applications using modern .NET technologies',
+        'Collaborating with cross-functional teams to design, develop, and deliver software solutions',
+        'Contributing to API development, database integration, testing, and application enhancements'
+      ],
+      technologies: [
+        'C#',
+        '.NET',
+        'ASP.NET Core',
+        'REST API',
+        'SQL Server',
+        'Blazor',
+        'Entity Framework Core',
+        'NUnit'
+      ]
+    },
+    {
+      title: 'Software Engineer',
       company: 'CodeBee Technology',
-      period: 'March 2023 - Present (2 years 6 months)',
+      startDate: '2023-03-01',
+      period: `March 2023 - Sep 2026 (3 years 7 months)`,
       location: 'Kathmandu, Bägmați, Nepal',
       description: [
         'Worked on WallBee Booking & Delivery System, managing bookings, deliveries, and real-time tracking features',
@@ -41,7 +66,7 @@ const Experience = () => {
     {
       title: 'Founder & Full-Stack Developer',
       company: 'TechShara',
-      period: 'June 2025 - Present (3 months)',
+      period: `Jun 2025 - Present (${getExperience('2025-06-01')} years)`,
       location: 'Nepal',
       description: [
         'Founded TechShara as a digital platform to empower tech learners and support businesses with scalable IT solutions',
@@ -76,7 +101,7 @@ const Experience = () => {
     {
       title: 'Part-time Lecturer & Department Coordinator',
       company: 'Kathmandu Institute of Technology',
-      period: 'April 2020 - January 2024 (3 years 10 months)',
+      period: 'April 2020 - Present (${getExperience("2020-04-01")} + years)',
       location: 'Kathmandu, Bägmați, Nepal',
       description: [
         'Taught C Programming, C++, .NET Technologies, Software Engineering, DSA, and Web Technologies to undergraduate students',
